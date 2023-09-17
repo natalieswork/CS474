@@ -1,5 +1,6 @@
 import math, time, sys, random, pandas, csv
 from matplotlib import pyplot as plt
+from sorting_algs import bozosort
 
 # Global Variables
 RANDOM_RANGE = 10 # The integer range that will populate the list e.g 0-10
@@ -33,6 +34,12 @@ elif MODE == "TEST":
             xSORT_START_CPU_TIME = time.process_time()
 
             # TODO: add some algorithms here with TEST_LIST...
+
+            # Bozo sort with TEST_LIST
+            sorted_list = bozosort(TEST_LIST)
+
+            # Sleep sort with TEST_LIST
+            
 
             xSORT_ELAPSED_SYS_TIME = time.time() - xSORT_START_SYS_TIME
             xSORT_ELAPSED_CPU_TIME = time.process_time() - xSORT_START_CPU_TIME
