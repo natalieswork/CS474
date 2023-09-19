@@ -18,3 +18,12 @@ def sleepsort(lst: list) -> list:
     """Docstring"""
     # natalie write code here
     return lst
+
+def quicksort(arr: list) -> list:
+    if len(arr) <= 1:
+        return arr
+    else:
+        pivot = arr[0]
+        less_than_pivot = [x for x in arr[1:] if x <= pivot]
+        greater_than_pivot = [x for x in arr[1:] if x > pivot]
+        return quicksort(less_than_pivot) + [pivot] + quicksort(greater_than_pivot)
