@@ -77,3 +77,27 @@ void quicksort(int *arr, int low, int high) {
 void quickSortArray(int *arr, int length) {
     quicksort(arr, 0, length - 1);
 }
+
+void slowSort(int arr[], int size) {
+    // The function now operates on the globally defined or dynamically allocated array.
+    // You can access it as arr[0], arr[1], ..., arr[size - 1].
+
+    // Base case: If the array has one or zero elements, it's already sorted.
+    if (size <= 1) {
+        return;
+    }
+
+    int mid = size / 2;
+
+    // Recursively sort the two halves
+    slowSort(arr, mid);
+    slowSort(arr + mid, size - mid);
+
+    // If the last element of the first half is greater than the first element of the second half,
+    // swap them to maintain sorting order.
+    if (arr[mid - 1] > arr[mid]) {
+        int temp = arr[mid - 1];
+        arr[mid - 1] = arr[mid];
+        arr[mid] = temp;
+    }
+}

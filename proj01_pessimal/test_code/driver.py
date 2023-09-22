@@ -5,8 +5,8 @@ import sorting_algs
 # Global Variables
 RANDOM_RANGE = 10 # The integer range that will populate the list e.g 0-10
 TEST_LIST_SIZE = 1# The size of the list
-SEQUENCES = 20 # The number of times the algorithms will run
-ITERATIONS = 10
+SEQUENCES = 12  # The number of times the algorithms will run
+ITERATIONS = 20
 
 sys.setrecursionlimit(1000)
 
@@ -55,7 +55,7 @@ elif MODE == "TEST":
                 c_array = (ctypes.c_int * TEST_LIST_SIZE)(*TEST_LIST)
 
                 # Call the C quicksort function
-                lib.quickSortArray(c_array, TEST_LIST_SIZE)
+                lib.bozosort(c_array, TEST_LIST_SIZE)
 
             # Sleep sort with TEST_LIST
             
@@ -66,7 +66,7 @@ elif MODE == "TEST":
                 with open(csv_file, mode='a', newline='') as file:
                     writer = csv.writer(file)
                     writer.writerow([TEST_LIST_SIZE, "{:.10f}".format(xSORT_ELAPSED_SYS_TIME*1000)])
-            TEST_LIST_SIZE = TEST_LIST_SIZE * 2
+            TEST_LIST_SIZE = TEST_LIST_SIZE + 1
     except SomeException as e:
         print(f"An error occurred: {e}")
 else:
