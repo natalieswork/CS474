@@ -36,8 +36,7 @@ iterations = 10
 data_files = ['1_data.txt', '2_data.txt', '3_data.txt', '4_data.txt',
                 '5_data.txt', '6_data.txt', '7_data.txt', '8_data.txt', '9_data.txt',
                   '10_data.txt', '11_data.txt', '12_data.txt', '13_data.txt', '14_data.txt',
-                   '15_data.txt', '16_data.txt', '17_data.txt', '18_data.txt', '19_data.txt',
-                   '20_data.txt', '25_data.txt', '30_data.txt', '40_data.txt',
+                   '15_data.txt', '25_data.txt', '30_data.txt', '40_data.txt',
                     '50_data.txt', '75_data.txt', '100_data.txt', '125_data.txt', '150_data.txt',
                   '175_data.txt', '200_data.txt', '205_data.txt', '210_data.txt', '220_data.txt',
                    '225_data.txt', '250_data.txt', '300_data.txt', '400_data.txt', '500_data.txt']
