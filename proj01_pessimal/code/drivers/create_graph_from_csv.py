@@ -25,7 +25,7 @@ plt.title("Time Complexities: BozoSort vs SlowSort")
 plt.legend()
 
 # Plot each data set onto the graph
-sns.lineplot(data=bozo_df, x="list_size", y="bozo_time", linewidth=2.5, label="BozoSort")
+sns.lineplot(data=bozo_df, x="list_size", y="bozo_time", label="BozoSort")
 sns.lineplot(data=slow_df, x="list_size", y="slow_time", label = "SlowSort")
 
 # Save plot to .png
