@@ -31,13 +31,13 @@ Lab Workstation Login Credentials
 ----------------------
 |  User   | Password |
 ----------------------
-| projenv |  cs474   |
+|  group  |  cs474   |
 ----------------------
 
 To login to the lab workstation:
 
   1. Open Terminal 
-  2. Type "ssh projenv@vm01"
+  2. Type "ssh group@vm01"
   3. Enter the password
   4. Voila
 

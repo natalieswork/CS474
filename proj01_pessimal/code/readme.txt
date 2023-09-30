@@ -6,5 +6,5 @@ This script will:
 -  Create graph of data collected
 
 To run the script:
-   cd /home/projenv/CS474/proj01_pessimal/code
+   cd /home/group/CS474/proj01_pessimal/code
    ./execute_algorithm_analysis.sh
