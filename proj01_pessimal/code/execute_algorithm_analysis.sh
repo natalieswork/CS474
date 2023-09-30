@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Generate random integer data files
-python drivers/generate_data_files.py &
+python3 drivers/generate_data_files.py &
 
 # Capture the PID
 pid1=$!
@@ -10,10 +10,10 @@ pid1=$!
 wait $pid1
 
 # Run both driver programs in parallel time
-python drivers/run_slowsort.py &
+python3 drivers/run_slowsort.py &
 pid2=$!
 
-python drivers/run_bozosort.py &
+python3 drivers/run_bozosort.py &
 pid3=$!
 
 # Wait for both parallel programs to finish
@@ -23,7 +23,7 @@ wait $pid3
 echo "All BozoSort and SlowSort Runs Completed."
 
 # Create plot from csv, wait until program is finished
-python drivers/create_graph_from_csv.py &
+python3 drivers/create_graph_from_csv.py &
 pid4=$!
 wait $pid4
 
