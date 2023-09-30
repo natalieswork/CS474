@@ -14,8 +14,8 @@ slow_df = pd.read_csv(slowsort_csv_file_path)
 
 # Merge both dataframes into one
 
-bozo_df["bozo_time"] = bozo_df["bozo_time"] * 100
-slow_df["slow_time"] = slow_df["slow_time"] * 100
+bozo_df["bozo_time"] = bozo_df["bozo_time"] / 1000
+slow_df["slow_time"] = slow_df["slow_time"] / 1000
 
 # Create a plot for lines to go on
 plt.figure(figsize=(12, 6))
