@@ -1,3 +1,15 @@
 
 Success! 34 files were created.
 
+Traceback (most recent call last):
+  File "/home/group/CS474/proj01_pessimal/code/drivers/run_slowsort.py", line 54, in <module>
+  File "/home/group/CS474/proj01_pessimal/code/drivers/run_slowsort.py", line 26, in executeSlow
+FileNotFoundError: [Errno 2] No such file or directory: '/home/group/CS474/proj01_pessimal/code/csvdata/slowsort.csv'
+All SlowSort Runs Completed.
+Traceback (most recent call last):
+  File "/home/group/CS474/proj01_pessimal/code/drivers/run_bozosort.py", line 52, in <module>
+  File "/home/group/CS474/proj01_pessimal/code/drivers/run_bozosort.py", line 24, in executeBozo
+FileNotFoundError: [Errno 2] No such file or directory: '/home/group/CS474/proj01_pessimal/code/csvdata/bozosort.csv'
+All BozoSort and SlowSort Runs Completed.
+No handles with labels found to put in legend.
+Runs completed, graphs generated.
